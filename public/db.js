@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 let db;
 let version;
 
@@ -53,9 +51,9 @@ request.onsuccess = function (event) {
 };
 
 const saveRecord = (data) => {
-    const transaction = db.transaction(["BudgetStore"], "readwrite");
-    const store = transaction.objectStore("BudgetStore");
-    store.add(data)
-}
+  const transaction = db.transaction(["BudgetStore"], "readwrite");
+  const store = transaction.objectStore("BudgetStore");
+  store.add(data);
+};
 
-window.addEventListener('online', checkDatabase)
+window.addEventListener("online", checkDatabase);
