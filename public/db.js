@@ -8,7 +8,7 @@ request.onupgradeneeded = function (event) {
   const newVersion = event.newVersion || db.version;
   db = event.target.result;
   if (db.objectStoreNames.length === 0) {
-    db.objectStoreNames("BudgetStore", { autoIncrement: true });
+    db.createObjectStore("BudgetStore", { autoIncrement: true });
   }
 };
 
