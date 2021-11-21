@@ -21,6 +21,8 @@
 
   ## How to Contribute
 
+  ## Link
+  https://uoft-budget.herokuapp.com/
 
   ## Screenshot
   ![Screenshot](imgs/Capture.PNG)
